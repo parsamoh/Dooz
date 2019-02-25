@@ -30,7 +30,7 @@ public class Dooz {
 
 			
 			if ( r < 1 || r > 3 || c < 1 || c > 3 ){
-				System.out.println("range of your input is Invalid!")
+				System.out.println("range of your input is Invalid!");
 				continue ; 
 			}
 
