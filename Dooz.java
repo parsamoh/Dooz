@@ -23,9 +23,18 @@ public class Dooz {
 			
 			System.out.println("Please enter the row number:");
 			int r = scanner.nextInt();
-			
+				
 			System.out.println("Please enter the column number:");
 			int c = scanner.nextInt();
+
+
+			
+			if ( r < 1 || r > 3 || c < 1 || c > 3 ){
+				System.out.println("range of your input is Invalid!")
+				continue ; 
+			}
+
+
 			boardArray[r-1][c-1] = turn+1;
 			turn = 1 - turn;
 		}
