@@ -33,7 +33,11 @@ public class Dooz {
 				System.out.println("range of your input is Invalid!");
 				continue ; 
 			}
-
+			
+			   if( boardArray[r-1][c-1] != 0){
+                                 System.out.println("this cell is taken");
+                                continue ;
+                        }
 
 			boardArray[r-1][c-1] = turn+1;
 			turn = 1 - turn;
